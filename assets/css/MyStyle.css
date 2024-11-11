@@ -1,0 +1,20 @@
+h1{ text-align: center;}
+
+#Heading-section-top{
+    color: rgb(37, 165, 37);
+}
+
+.font-color-pink{
+    color: pink;
+}
+
+
+.font-size-10{
+    font-size: 8rem;
+}
+
+.font-oswald{
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+
+}
