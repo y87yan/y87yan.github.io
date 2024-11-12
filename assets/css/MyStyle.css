@@ -21,8 +21,11 @@ h1{ text-align: center;}
 
 }
 
-a:link {
+a:link, a:visited {
+    background-color: blue;
     color: purple;
+    padding: 14px 25px;
+    display: inline-block;
 }
 
 a:hover {
