@@ -1,12 +1,130 @@
-<html>
-  <head>
-    <title>Leslie Yan</title> 
-    <link rel="stylesheet" href="assets/css/webStyle.css">
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leslie Yan - CV</title>
+    <link rel="stylesheet" href="assets/css/webStyle.css"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <h1 class="font-oswald font-color-pink font-size-10">Leslie Yan</h1>
-  </body>
+</head>
+<body>
+
+    <header>
+
+        <h1 class="font-oswald font-size-8">Leslie Yan</h1>
+        <p class="font-oswald">Data Analyst</p>
+        
+          <a href="path-to-your-cv.pdf" class="button" download>
+            <span class="hover-text" data-text="Download CV">Download CV</span>
+          </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li class="dropdown">
+                    <a href="education.html">Education</a>
+                    <ul class="dropdown-content">
+                        <li><a href="undergraduate.html">Undergraduate</a></li>
+                        <li><a href="graduate.html">Graduate</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="ProfessionalExperience.html">Experience</a>
+                    <ul class="dropdown-content">
+                        <li><a href="coop_1.html">Co-op/Internship</a></li>
+                        <li><a href="Projects.html">Professional Projects</a></li>
+                    </ul>
+                </li>
+                <li><a href="TechnicalSkills.html">Technical Skills</a></li>
+                <li><a href="SoftSkills.html">Soft Skills & Hobbies</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- About Section -->
+        <section id="about">
+            <h2>Summary of Qualifications</h2>
+            <ul>
+                <li>Extensive experience working with relational databases in <b>SQL</b>.</li>
+                <li>Professional experience in Python programming with <b>Pandas</b>, SKLearn, and Matplotlib.</li>
+                <li>Proficient in <b>Excel</b> for data analysis and visualization using advanced functions and pivot tables.</li>
+                <li>Working experience in <b>SAS</b> programming and analytics, including predictive model training and evaluation.</li>
+                <li>Profound knowledge of <b>Fraud Analytics</b> in retail and corporate banking, with expertise in handling 1st and 3rd party fraud and developing PRM system rules.</li>
+                <li>Comprehensive understanding of BASEL credit risk parameters, focusing strongly on Probability of Default (<b>PD</b>) modeling.</li>
+                <li>Skilled in advertising analysis, with robust knowledge of online channel optimization, <b>attribution models</b>, and market audience analysis.</li>
+                <li>Experienced in analyzing and optimizing loyalty program profitability through data-driven strategies, including campaign performance analysis and actionable insights generation.</li>
+            </ul>
+        </section>
+
+        <!-- Quick Links Section -->
+        <section id="quick-links">
+            <h2>Explore My Profile</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3><a href="education.html">Education</a></h3>
+                    <p>Learn more about my academic journey and key projects.</p>
+                </div>
+                <div class="card">
+                    <h3><a href="ProfessionalExperience.html">Professional Experience</a></h3>
+                    <p>Explore my hands-on experience, including internships and co-op work.</p>
+                </div>
+                <div class="card">
+                    <h3><a href="TechnicalSkills.html">Technical Skills</a></h3>
+                    <p>See my proficiency in data analysis tools, software, and programming.</p>
+                </div>
+                <div class="card">
+                    <h3><a href="SoftSkills.html">Soft Skills & Hobbies</a></h3>
+                    <p>Get to know my interpersonal skills and personal interests.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Education</h3>
+                <ul>
+                    <li><a href="education.html">Education Overview</a></li>
+                    <li><a href="undergraduate.html">Undergraduate</a></li>
+                    <li><a href="graduate.html">Graduate</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Experience</h3>
+                <ul>
+                    <li><a href="coop_1.html">Co-op/Internship</a></li>
+                    <li><a href="Projects.html">Professional Projects</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Skills</h3>
+                <ul>
+                    <li><a href="TechnicalSkills.html">Technical Skills</a></li>
+                    <li><a href="SoftSkills.html">Soft Skills & Hobbies</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <ul>
+                    <li>Email: <a href="mailto:yuyi.yan@mail.mcgill.ca">yuyi.yan@mail.mcgill.ca</a></li>
+                    <li>Phone: 647-889-1127</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+</body>
 </html>

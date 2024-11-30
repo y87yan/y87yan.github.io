@@ -106,84 +106,71 @@ header nav ul li a:hover {
     display: block;
 }
 
-/* About Section Styling */
 
-#about h2 {
+/* Education Page Styling */
+#education {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#education h2{
     color: #000B58; /* Dark Blue */
     font-size: 2.5em;
     margin-bottom: 20px;
 }
 
-#about ul {
-    list-style-type: none;
-    padding: 0;
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: left; 
-}
-
-#about ul li {
-    background-color: #FFF4B7; /* Light Yellow Background */
+#education p {
+    max-width: 600px;
+    margin: 0 auto 20px;
     color: #003161; /* Navy Blue Text */
-    padding: 10px 15px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: left; 
+    margin-bottom: 40px;
 }
 
-#about ul li:hover {
-    background-color: #006A67; /* Teal on Hover */
-    color: #FFF4B7; /* Light Yellow Text on Hover */
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
 
-/* Main Content */
-main {
-    padding: 20px;
-    text-align: center;
-    flex: 1; /* Allows main to stretch */
-}
 
-section h2 {
-    color: #000B58; /* Dark Blue */
-    font-size: 1.8em;
-    margin: 20px 0;
-}
-
-/* Card Container */
-.card-container {
+/* Education Links with Background Images */
+.education-links {
     display: flex;
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap;
     margin-top: 20px;
 }
 
-.card {
-    background-color: #f2f2f2;
-    border-radius: 8px;
-    padding: 20px;
-    width: 200px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    transition: transform 0.3s ease;
-}
-
-.card h3 a {
-    color: #003161; /* Navy Blue */
+.education-button {
+    display: inline-block;
+    padding: 60px 25px; 
+    background-size: cover;
+    background-position: center;
+    color: #FFF4B7; /* Light Yellow Text */
     text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 300px; /* Button width */
+    height: 250px; /* Button height */
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5rem;
 }
 
-.card p {
-    color: #666;
-    font-size: 0.9em;
-    margin-top: 10px;
+/* Background for Undergraduate Button */
+#undergraduate-button {
+    background-image: url('https://uwaterloo.ca/news/sites/ca.news/files/styles/feature_large/public/fall_waterloo_sign.jpg?itok=jHuIvD0H');
 }
 
-.card:hover {
+/* Background for Graduate Button */
+#graduate-button {
+    background-image: url('https://www.mcgill.ca/root/redpath-final-rev.jpg');
+}
+
+.education-button:hover {
     transform: scale(1.05);
+    color: #FFF4B7; /* Keep text color on hover for readability */
+    background-blend-mode: multiply; /* Optional: Blend for better readability */
 }
+
 
 /* Footer Section */
 footer {
@@ -251,7 +238,6 @@ footer {
     }
 }
 
-
 .font-oswald{
     font-family: "Oswald", sans-serif;
     word-spacing: Normal;
@@ -262,6 +248,7 @@ footer {
    font-size: 8rem;
    font-weight: 600;
 }
+
 
 /* Download Button Styling */
 .button {
@@ -308,3 +295,4 @@ footer {
   color: transparent; /* Keep color transparent initially */
   -webkit-text-stroke: inherit; /* Match stroke color from parent */
 }
+

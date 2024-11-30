@@ -1,5 +1,175 @@
-<html>
-  <head>
-    <title>Leslie Yan</title> 
-  </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graduate - Leslie Yan</title>
+    <link rel="stylesheet" href="assets/css/graduate.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+      <h1 class="font-oswald font-size-8">Leslie Yan</h1>
+      <p class="font-oswald">Data Analyst</p>
+      
+        <a href="path-to-your-cv.pdf" class="button" download>
+          <span class="hover-text" data-text="Download CV">Download CV</span>
+        </a>
+     
+      <nav>
+          <ul>
+            <li><a href="index.html">About</a></li>
+            <li class="dropdown">
+                <a href="education.html">Education</a>
+                <ul class="dropdown-content">
+                    <li><a href="undergraduate.html">Undergraduate</a></li>
+                    <li><a href="graduate.html">Graduate</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="ProfessionalExperience.html">Experience</a>
+                <ul class="dropdown-content">
+                    <li><a href="coop_1.html">Co-op/Internship</a></li>
+                    <li><a href="Projects.html">Professional Projects</a></li>
+                </ul>
+            </li>
+            <li><a href="TechnicalSkills.html">Technical Skills</a></li>
+            <li><a href="SoftSkills.html">Soft Skills & Hobbies</a></li>
+
+            
+            
+
+          </ul>
+      </nav>
+  </header>
+
+  
+    <main>
+      <section id="graduate-degree-info">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/29/McGill_University_CoA.svg/800px-McGill_University_CoA.svg.png" 
+             alt="McGill University Logo" class="school-logo">
+        <h2><span class="icon">🎓</span> Master of Information Studies</h2>
+        <p>McGill University, Montreal, QC</p>
+        <p>September 2023 – Present</p>
+    </section>
+    
+    <section id="graduate-projects">
+      <h2>Highlighted Projects</h2>
+      <div class="project-card">
+          <h3><span class="icon">📊</span> E-commerce Customer Purchase Prediction Project</h3>
+          <p><strong>Course:</strong> INFS630 - Data Mining</p>
+          <p><strong>Duration:</strong> Winter 2024</p>
+          <ul>
+              <li>Developed machine learning models to predict customer purchases, focusing on actionable insights for e-commerce optimization.</li>
+              <li>Enriched a dataset of 12,330 records with advanced feature engineering, including behavioural patterns and session-based attributes to improve model performance.</li>
+              <li>Evaluated various models and selected a bagged Decision Tree to balance interpretability and accuracy.</li>
+              <li>Conducted sensitivity analysis on external factors like holidays and promotions, offering strategic recommendations on optimizing customer engagement during high-traffic periods.</li>
+              <li>Identified a critical predictor, leading to insights on optimizing key content areas for higher conversion rates.</li>
+              <li>Proposed business-focused recommendations to improve customer retention and revenue potential.</li>
+          </ul>
+      </div>
+  </section>
+  
+    
+    <section id="related-courses">
+        <h3>Related Courses</h3>
+        <div class="course-list">
+            <div class="course-item">
+                <span class="course-code">INFS 617</span>
+                <span class="course-title">Information System Design</span>
+                <span class="course-grade">A</span>
+            </div>
+            <div class="course-item">
+                <span class="course-code">INFS 629</span>
+                <span class="course-title">Information Security</span>
+                <span class="course-grade">A-</span>
+            </div>
+            <div class="course-item">
+                <span class="course-code">INFS 630</span>
+                <span class="course-title">Data Mining</span>
+                <span class="course-grade">A</span>
+            </div>
+            <div class="course-item">
+                <span class="course-code">INFS 634</span>
+                <span class="course-title">Web System Design & Management</span>
+                <span class="course-grade">In Progress</span>
+            </div>
+            <div class="course-item">
+                <span class="course-code">INFS 657</span>
+                <span class="course-title">Database Design & Development</span>
+                <span class="course-grade">In Progress</span>
+            </div>
+            <div class="course-item">
+                <span class="course-code">INFS 693</span>
+                <span class="course-title">Data Science</span>
+                <span class="course-grade">In Progress</span>
+            </div>
+        </div>
+    </section>
+    
+    <div class="button-container">
+      <button class="cta" onclick="window.location.href='undergraduate.html'">
+        <span class="hover-underline-animation"> Undergraduate Page </span>
+        <svg
+          id="arrow-horizontal"
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="10"
+          viewBox="0 0 46 16"
+        >
+          <path
+            id="Path_10"
+            data-name="Path 10"
+            d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+            transform="translate(30)"
+          ></path>
+        </svg>
+      </button>
+    </div>
+        
+    </main>
+    
+    <footer id="contact">
+      <div class="footer-container">
+          <div class="footer-column">
+              <h3>About</h3>
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About Me</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+              </ul>
+          </div>
+          <div class="footer-column">
+              <h3>Education</h3>
+              <ul>
+                  <li><a href="education.html">Education Overview</a></li>
+                  <li><a href="undergraduate.html">Undergraduate</a></li>
+                  <li><a href="graduate.html">Graduate</a></li>
+              </ul>
+          </div>
+          <div class="footer-column">
+              <h3>Experience</h3>
+              <ul>
+                  <li><a href="coop_1.html">Co-op/Internship</a></li>
+                  <li><a href="Projects.html">Professional Projects</a></li>
+              </ul>
+          </div>
+          <div class="footer-column">
+              <h3>Skills</h3>
+              <ul>
+                  <li><a href="TechnicalSkills.html">Technical Skills</a></li>
+                  <li><a href="SoftSkills.html">Soft Skills & Hobbies</a></li>
+              </ul>
+          </div>
+          <div class="footer-column">
+              <h3>Contact</h3>
+              <ul>
+                  <li>Email: <a href="mailto:yuyi.yan@mail.mcgill.ca">yuyi.yan@mail.mcgill.ca</a></li>
+                  <li>Phone: 647-889-1127</li>
+              </ul>
+          </div>
+      </div>
+  </footer>
+</body>
 </html>

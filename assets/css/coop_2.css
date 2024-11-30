@@ -16,8 +16,9 @@ body {
     min-height: 100vh;
 }
 
+/* Ensure main content area takes up available space */
 main {
-    flex: 1; 
+    flex: 1; /* Expands main to fill space, pushing footer to bottom */
 }
 
 /* Header Section */
@@ -40,6 +41,11 @@ header p {
 }
 
 /* Navigation Bar */
+header {
+    position: relative;
+    z-index: 10; /* Ensures header and navigation are above other content */
+}
+
 header nav ul {
     list-style-type: none;
     display: flex;
@@ -74,14 +80,20 @@ header nav ul li a:hover {
 .dropdown-content {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 100%; /* Position it below the menu item by default */
     left: 0;
-    background-color: #FFF4B7; /* Light Yellow */
+    background-color: #FFF4B7; /* Light Yellow Background */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    z-index: 20; /* Higher z-index to ensure it appears above other content */
     min-width: 150px;
     border-radius: 5px;
     overflow: hidden;
+    padding-top: 10px;
+}
+
+/* Show dropdown on hover */
+header nav ul li:hover .dropdown-content {
+    display: block;
 }
 
 .dropdown-content li {
@@ -98,169 +110,138 @@ header nav ul li a:hover {
 
 .dropdown-content li a:hover {
     background-color: #003161; /* Navy Blue */
-    color: #37FF8B;
 }
 
-/* Show dropdown on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* About Section Styling */
-
-#about h2 {
-    color: #000B58; /* Dark Blue */
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-#about ul {
-    list-style-type: none;
-    padding: 0;
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: left; 
-}
-
-#about ul li {
-    background-color: #FFF4B7; /* Light Yellow Background */
-    color: #003161; /* Navy Blue Text */
-    padding: 10px 15px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: left; 
-}
-
-#about ul li:hover {
-    background-color: #006A67; /* Teal on Hover */
-    color: #FFF4B7; /* Light Yellow Text on Hover */
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-/* Main Content */
-main {
-    padding: 20px;
-    text-align: center;
-    flex: 1; /* Allows main to stretch */
-}
-
-section h2 {
-    color: #000B58; /* Dark Blue */
-    font-size: 1.8em;
-    margin: 20px 0;
-}
-
-/* Card Container */
-.card-container {
+/* Experience Grid */
+.experience-grid {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-top: 20px;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px;
+    max-width: 1000px;
+    max-height: 500px;
+    margin: 20px auto;
 }
-
-.card {
-    background-color: #f2f2f2;
-    border-radius: 8px;
+.experience-card {
+    display: flex;
+    color: #FFF4B7; /* Light yellow text */
     padding: 20px;
-    width: 200px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    transition: transform 0.3s ease;
+    border-radius: 10px;
+    gap: 20px; /* Space between left and right sections */
 }
 
-.card h3 a {
-    color: #003161; /* Navy Blue */
-    text-decoration: none;
+.left-section {
+    flex: 1.5; /* Makes the left section wider */
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
-.card p {
-    color: #666;
-    font-size: 0.9em;
-    margin-top: 10px;
+.right-section {
+    flex: 2; /* Makes the right section narrower */
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 1em;
+    line-height: 1.6;
 }
 
-.card:hover {
-    transform: scale(1.05);
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    cursor: pointer;
 }
+
+.experience-card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+/* Front of the Card */
+.card-front {
+    /*background-image: url('https://www.parcelpending.com/wp-content/uploads/2019/04/Suggestions-to-Improve-Office-Efficiency-900x601.jpg');*/
+    background-size: cover;
+    background-position: center;
+    color: #FFF4B7;
+}
+
+.experience-card:nth-child(1) .card-front {
+    background-image: url('https://cs.uwaterloo.ca/sites/default/files/uploads/images/c017066-190627-computer-science-stock-photography-9796.gif');
+}
+
+.experience-card:nth-child(2) .card-front {
+    background-image: url('https://uwaterloo.ca/computer-science-instructional-support-group/sites/default/files/styles/uw_is_ig_medium/public/uploads/images/11.png?itok=b1zS5k6a');
+}
+.card-front h3, .card-front .role {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Back of the Card */
+.card-back {
+    background-color: #003161;
+    color: #FFF4B7;
+    transform: rotateY(180deg);
+    text-align: left;
+}
+
+.card-back h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #FFF4B7;
+}
+
+.card-back ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #FFF4B7;
+}
+
+.card-back ul li {
+    margin-bottom: 8px;
+}
+
 
 /* Footer Section */
 footer {
     background-color: #003161;
     color: #FFF4B7;
-    padding: 30px 20px;
+    padding: 15px;
     text-align: center;
+    
+    font-size: 0.9em;
 }
 
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.footer-column {
-    flex: 1;
-    min-width: 150px;
-}
-
-.footer-column h3 {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #FFF4B7;
-    margin-bottom: 10px;
-}
-
-.footer-column ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-column ul li {
-    margin-bottom: 8px;
-}
-
-.footer-column ul li a {
-    color: #37FF8B;
+footer a {
+    color: #006A67;
     text-decoration: none;
-    font-size: 0.9rem;
-    transition: color 0.3s ease;
 }
 
-.footer-column ul li a:hover {
-    color: #FFF4B7;
+footer a:hover {
+    text-decoration: underline;
 }
 
-.footer-column ul li {
-    font-size: 0.9rem;
-}
-
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer-column {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-}
-
-
-.font-oswald{
+/* Font Styling */
+.font-oswald {
     font-family: "Oswald", sans-serif;
     word-spacing: Normal;
     letter-spacing: Normal;
 }
 
-.font-size-8{
-   font-size: 8rem;
-   font-weight: 600;
+.font-size-8 {
+    font-size: 8rem;
+    font-weight: 600;
 }
 
 /* Download Button Styling */
@@ -308,3 +289,4 @@ footer {
   color: transparent; /* Keep color transparent initially */
   -webkit-text-stroke: inherit; /* Match stroke color from parent */
 }
+

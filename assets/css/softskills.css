@@ -16,8 +16,10 @@ body {
     min-height: 100vh;
 }
 
+
+/* Ensure main content area takes up available space */
 main {
-    flex: 1; 
+    flex: 1; /* Expands main to fill space, pushing footer to bottom */
 }
 
 /* Header Section */
@@ -40,11 +42,16 @@ header p {
 }
 
 /* Navigation Bar */
+header {
+    position: relative;
+    z-index: 10; 
+}
+
 header nav ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
-    background-color: #000B58; /* Dark Blue */
+    background-color: #000B58; 
 }
 
 header nav ul li {
@@ -53,7 +60,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #FFF4B7; /* Light Yellow Text */
+    color: #FFF4B7; 
     text-decoration: none;
     font-weight: bold;
     padding: 15px;
@@ -63,7 +70,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    background-color: #003161; /* Navy Blue */
+    background-color: #003161;
 }
 
 /* Dropdown Menu */
@@ -74,14 +81,19 @@ header nav ul li a:hover {
 .dropdown-content {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 100%; 
     left: 0;
-    background-color: #FFF4B7; /* Light Yellow */
+    background-color: #FFF4B7;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    z-index: 20; 
     min-width: 150px;
     border-radius: 5px;
     overflow: hidden;
+}
+
+/* Show dropdown on hover */
+header nav ul li:hover .dropdown-content {
+    display: block;
 }
 
 .dropdown-content li {
@@ -89,7 +101,7 @@ header nav ul li a:hover {
 }
 
 .dropdown-content li a {
-    color: #000B58; /* Dark Blue Text */
+    color: #000B58;
     padding: 10px 15px;
     text-decoration: none;
     display: block;
@@ -101,89 +113,12 @@ header nav ul li a:hover {
     color: #37FF8B;
 }
 
-/* Show dropdown on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
-}
 
-/* About Section Styling */
 
-#about h2 {
-    color: #000B58; /* Dark Blue */
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
 
-#about ul {
-    list-style-type: none;
-    padding: 0;
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: left; 
-}
 
-#about ul li {
-    background-color: #FFF4B7; /* Light Yellow Background */
-    color: #003161; /* Navy Blue Text */
-    padding: 10px 15px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: left; 
-}
 
-#about ul li:hover {
-    background-color: #006A67; /* Teal on Hover */
-    color: #FFF4B7; /* Light Yellow Text on Hover */
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
 
-/* Main Content */
-main {
-    padding: 20px;
-    text-align: center;
-    flex: 1; /* Allows main to stretch */
-}
-
-section h2 {
-    color: #000B58; /* Dark Blue */
-    font-size: 1.8em;
-    margin: 20px 0;
-}
-
-/* Card Container */
-.card-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
-
-.card {
-    background-color: #f2f2f2;
-    border-radius: 8px;
-    padding: 20px;
-    width: 200px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    transition: transform 0.3s ease;
-}
-
-.card h3 a {
-    color: #003161; /* Navy Blue */
-    text-decoration: none;
-}
-
-.card p {
-    color: #666;
-    font-size: 0.9em;
-    margin-top: 10px;
-}
-
-.card:hover {
-    transform: scale(1.05);
-}
 
 /* Footer Section */
 footer {
@@ -252,15 +187,16 @@ footer {
 }
 
 
-.font-oswald{
+/* Font Styling */
+.font-oswald {
     font-family: "Oswald", sans-serif;
     word-spacing: Normal;
     letter-spacing: Normal;
 }
 
-.font-size-8{
-   font-size: 8rem;
-   font-weight: 600;
+.font-size-8 {
+    font-size: 8rem;
+    font-weight: 600;
 }
 
 /* Download Button Styling */
@@ -305,6 +241,6 @@ footer {
 
 .hover-text {
   display: inline-block;
-  color: transparent; /* Keep color transparent initially */
-  -webkit-text-stroke: inherit; /* Match stroke color from parent */
+  color: transparent; 
+  -webkit-text-stroke: inherit; 
 }

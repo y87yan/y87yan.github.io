@@ -1,5 +1,108 @@
-<html>
-  <head>
-    <title>Leslie Yan</title> 
-  </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coop - Leslie Yan</title>
+    <link rel="stylesheet" href="assets/css/projects.css"> <!-- Link to your CSS file -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section (Optional, if consistent across pages) -->
+    <header>
+      <h1 class="font-oswald font-size-8">Leslie Yan</h1>
+      <p class="font-oswald">Data Analyst</p>
+      <a href="path-to-your-cv.pdf" class="button" download>
+        <span class="hover-text" data-text="Download CV">Download CV</span>
+      </a>
+      <nav>
+          <ul>
+            <li><a href="index.html">About</a></li>
+            <li class="dropdown">
+                <a href="education.html">Education</a>
+                <ul class="dropdown-content">
+                    <li><a href="undergraduate.html">Undergraduate</a></li>
+                    <li><a href="graduate.html">Graduate</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="ProfessionalExperience.html">Experience</a>
+                <ul class="dropdown-content">
+                    <li><a href="coop_1.html">Co-op/Internship</a></li>
+                    <li><a href="projects.html">Professional Projects</a></li>
+                </ul>
+            </li>
+            <li><a href="TechnicalSkills.html">Technical Skills</a></li>
+            <li><a href="SoftSkills.html">Soft Skills & Hobbies</a></li>
+          </ul>
+      </nav>
+  </header>
+
+    <!-- Main Content for Education Page -->
+<main>
+<div class="experience-section">
+  <h2 class="section-title">Professional Projects</h2>
+  <p class="section-description">Select a project to view its details.</p>
+
+  <!-- Project Selector Tabs -->
+  <div class="project-tabs">
+    <a href="#project1" class="tab">IPRE Credit Risk Modeling</a>
+    <a href="#project2" class="tab">Fraud Analysis Projects</a>
+    <a href="#project3" class="tab">Marketing Campaign Analysis</a>
+    <a href="#project4" class="tab">Online Advertisement Analysis</a>
+  </div>
+
+  <!-- Project Details (Tab Content) -->
+  <div class="project-details">
+    <div id="project1" class="project-content">
+      <h3>IPRE Credit Risk Modeling</h3>
+      <ul>
+        <li>Created a PD model using SAS for IPRE loans, applying the 4M framework.</li>
+        <li>Conducted data quality checks and used Weight of Evidence for predictive analysis.</li>
+        <li>Applied stratified sampling for model training, identifying key risk factors.</li>
+        <li>Assessed model performance through testing, outlining limitations and trigger points.</li>
+      </ul>
+    </div>
+
+    <div id="project2" class="project-content">
+      <h3>Fraud Analysis Projects</h3>
+      <ul>
+        <li>Specialized in commercial and retail fraud detection using tailored methodologies.</li>
+        <li>Analyzed 200K+ transactions with SQL, creating advanced features for fraud pattern recognition.</li>
+        <li>Utilized univariate analysis to optimize fraud detection accuracy.</li>
+        <li>Created and evaluated fraud rules for schemes like Taxi Scams and Worthless Deposits.</li>
+      </ul>
+    </div>
+
+    <div id="project3" class="project-content">
+      <h3>Marketing Campaign Insights and Profitability Analysis</h3>
+      <ul>
+        <li>Analyzed Tim Hortons' RUTR campaign data to identify key profit drivers.</li>
+        <li>Used Excel to analyze 900K+ campaign data points, uncovering trends in store location and prize distribution.</li>
+        <li>Provided recommendations to optimize campaign design for profitability and engagement.</li>
+      </ul>
+    </div>
+
+    <div id="project4" class="project-content">
+      <h3>Online Direct Marketing Advertisement Analysis</h3>
+      <ul>
+        <li>Focused on online advertising channels, with metrics like CTR, ROAS, and conversion rates.</li>
+        <li>Used Python (Pandas) for data analysis, refining media strategies with clean data.</li>
+        <li>Developed Markov Chain attribution models for performance evaluation and budget optimization.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+</main>
+
+  
+    <footer id="contact">
+        <p>Contact Information:</p>
+        <p>Email: yuyi.yan@mail.mcgill.ca</p>
+        <p>Phone Number: 647-889-1127</p>
+        
+    </footer>
+</body>
 </html>

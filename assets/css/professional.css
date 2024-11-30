@@ -1,0 +1,309 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Style */
+body {
+    font-family: "Oswald", sans-serif;
+    color: #333;
+    background-color: #FFF4B7; /* Light Yellow Background */
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Ensure main content area takes up available space */
+main {
+    flex: 1; /* Expands main to fill space, pushing footer to bottom */
+}
+
+/* Header Section */
+header {
+    background-color: #000B58; /* Dark Blue */
+    color: #FFF4B7; /* Light Yellow Text */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+    position: relative;
+    z-index: 10; 
+}
+
+header p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    background-color: #000B58; 
+}
+
+header nav ul li {
+    position: relative;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #FFF4B7; 
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #003161;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: #FFF4B7;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 20; 
+    min-width: 150px;
+    border-radius: 5px;
+    overflow: hidden;
+    padding-top: 10px;
+}
+
+/* Show dropdown on hover */
+header nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content li {
+    margin: 0;
+}
+
+.dropdown-content li a {
+    color: #000B58;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content li a:hover {
+    background-color: #003161; /* Navy Blue */
+}
+
+
+/* Professional Experience Main Page */
+#professional-experience-main {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #FFF4B7; /* Light Yellow Background */
+}
+
+#professional-experience-main h2 {
+    color: #000B58;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#professional-experience-main p {
+    color: #333;
+    font-size: 1.1em;
+    margin-bottom: 40px;
+}
+
+/* Experience Cards Container */
+.experience-cards {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Card Container Styling */
+.card {
+    width: 450px;
+    height: 500px;
+    display: flex;
+    flex-direction: row; /* Stack vertically */
+    gap: 10px;
+    background: #FFF4B7;
+    padding: 0.5em;
+    border-radius: 4px;
+}
+
+/* Individual Boxes with Background Images */
+.card p {
+    height: 100%;
+    flex: 1;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 2px solid #003161; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Needed for pseudo-element positioning */
+    color: #003161; 
+    transition: flex 0.5s ease; /* Smooth transition for hover effect */
+}
+
+/* Background Image Pseudo-Element */
+.card p::before {
+    content: ""; /* Empty content for the pseudo-element */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.5s ease, background-size 0.5s ease;
+    border-radius: 4px;
+    z-index: 0; /* Ensures the background is behind the text */
+}
+
+/* Background Images for Each Box */
+.box-1::before {
+    background-image: url('https://www.parcelpending.com/wp-content/uploads/2019/04/Suggestions-to-Improve-Office-Efficiency-900x601.jpg'); 
+}
+
+.box-2::before {
+    background-image: url('https://live.staticflickr.com/2377/2080297634_6640da9893_b.jpg'); 
+}
+
+/* Text Styling */
+.card p a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: inherit; /* Keep text color */
+    text-decoration: none; 
+}
+
+.card p a span {
+    position: relative;
+    z-index: 1; 
+    display: inline-block;
+    transform: rotate(-90deg); /* Vertical orientation */
+    transition: transform 0.5s ease, color 0.5s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    white-space: nowrap; /* Prevent text wrapping */
+    color: #003161; 
+    font-size: 1.5rem;
+}
+
+/* Hover Effect */
+.card p:hover {
+    flex: 3; /* Expand the panel on hover */
+}
+
+.card p:hover::before {
+    opacity: 1; /* Reveal the background image on hover */
+    background-size: cover; /* Ensure full coverage of the background image */
+}
+
+.card p:hover span {
+    transform: rotate(0); /* Rotate text to horizontal on hover */
+    color: #FFF4B7; /* Change text color on hover for contrast */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+}
+
+/* Footer Section */
+footer {
+    background-color: #003161;
+    color: #FFF4B7;
+    padding: 15px;
+    text-align: center;
+    
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #006A67;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Font Styling */
+.font-oswald {
+    font-family: "Oswald", sans-serif;
+    word-spacing: Normal;
+    letter-spacing: Normal;
+}
+
+.font-size-8 {
+    font-size: 8rem;
+    font-weight: 600;
+}
+
+/* Download Button Styling */
+.button {
+  position: relative;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  font-family: "Arial", sans-serif;
+  color: transparent;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 3px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.6); /* Light gray outline */
+  transition: color 0.5s ease;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 4px; /* Thickness of the vertical bar */
+  background-color: #37FF8B; /* Green color for the bar */
+  transition: left 0.5s ease;
+}
+
+.button:hover {
+  color: #37FF8B; /* Glow green color for text */
+  -webkit-text-stroke: 1px #37FF8B;
+  text-shadow: 0 0 10px #37FF8B, 0 0 20px #37FF8B, 0 0 30px #37FF8B;
+}
+
+.button:hover::before {
+  left: calc(100% - 4px); /* Move the bar to the right */
+}
+
+.hover-text {
+  display: inline-block;
+  color: transparent; 
+  -webkit-text-stroke: inherit; 
+}

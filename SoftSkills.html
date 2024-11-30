@@ -1,5 +1,104 @@
-<html>
-  <head>
-    <title>Leslie Yan</title> 
-  </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soft Skills & Hobbies - Leslie Yan</title>
+    <link rel="stylesheet" href="assets/css/softskills.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+      <h1 class="font-oswald font-size-8">Leslie Yan</h1>
+      <p class="font-oswald">Data Analyst</p>
+      <a href="path-to-your-cv.pdf" class="button" download>
+        <span class="hover-text" data-text="Download CV">Download CV</span>
+      </a>
+      <nav>
+          <ul>
+            <li><a href="index.html">About</a></li>
+            <li class="dropdown">
+                <a href="education.html">Education</a>
+                <ul class="dropdown-content">
+                    <li><a href="undergraduate.html">Undergraduate</a></li>
+                    <li><a href="graduate.html">Graduate</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="ProfessionalExperience.html">Experience</a>
+                <ul class="dropdown-content">
+                    <li><a href="coop_1.html">Co-op/Internship</a></li>
+                    <li><a href="projects.html">Professional Projects</a></li>
+                </ul>
+            </li>
+            <li><a href="TechnicalSkills.html">Technical Skills</a></li>
+            <li><a href="SoftSkills.html">Soft Skills & Hobbies</a></li>
+          </ul>
+      </nav>
+  </header>
+
+
+   
+
+  
+  
+  <footer id="contact">
+    <div class="footer-container">
+        <div class="footer-column">
+            <h3>About</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Education</h3>
+            <ul>
+                <li><a href="education.html">Education Overview</a></li>
+                <li><a href="undergraduate.html">Undergraduate</a></li>
+                <li><a href="graduate.html">Graduate</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Experience</h3>
+            <ul>
+                <li><a href="coop_1.html">Co-op/Internship</a></li>
+                <li><a href="Projects.html">Professional Projects</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Skills</h3>
+            <ul>
+                <li><a href="TechnicalSkills.html">Technical Skills</a></li>
+                <li><a href="SoftSkills.html">Soft Skills & Hobbies</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Contact</h3>
+            <ul>
+                <li>Email: <a href="mailto:yuyi.yan@mail.mcgill.ca">yuyi.yan@mail.mcgill.ca</a></li>
+                <li>Phone: 647-889-1127</li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
+  <script>
+  
+      document.querySelectorAll('.card').forEach(card => {
+     
+        card.addEventListener('click', function() {
+          const link = card.querySelector('a');
+          if (link) {
+            window.location.href = link.href; 
+          }
+        });
+      });
+  </script>
+    
+</body>
 </html>

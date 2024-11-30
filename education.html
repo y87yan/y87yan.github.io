@@ -1,54 +1,101 @@
-<html>
-    <head> 
-        <title>Test File for HTML</title> 
-        <link rel="icon" type="image/x-icon" href="Assets/IMG/google-logo.png">
-        <link rel="stylesheet" href="Assets/CSS/MyStyle.css">
 
-    </head>
-    <body>
-        <h1 id="Heading-section-top">This is my Heading One</h1>
-        <h2>This is my Heading Two</h2>
-        <h2 class="font-size-10">This is my heading 2 without inline CSS</h2>
-        <h1>This is another H1 tag</h1>
-        <br/>
-        <br/>
-        <br/>
-        <hr/>
-        <p class="font-color-pink">This is a <b>paragraph text.</b> <strike>More text is here.</strike> &#169;
-            <a href="About.html">About page view</a>
-        </p>
-        <h2>This is my Heading Two</h2>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - Leslie Yan</title>
+    <link rel="stylesheet" href="assets/css/educationStyle.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+    <header>
+      <h1 class="font-oswald font-size-8">Leslie Yan</h1>
+      <p class="font-oswald">Data Analyst</p>
+      <a href="path-to-your-cv.pdf" class="button" download>
+        <span class="hover-text" data-text="Download CV">Download CV</span>
+      </a>
+      <nav>
+          <ul>
+              <li><a href="index.html">About</a></li>
+              <li class="dropdown">
+                  <a href="education.html">Education</a>
+                  <ul class="dropdown-content">
+                      <li><a href="undergraduate.html">Undergraduate</a></li>
+                      <li><a href="graduate.html">Graduate</a></li>
+                  </ul>
+              </li>
+              <li class="dropdown">
+                  <a href="ProfessionalExperience.html">Experience</a>
+                  <ul class="dropdown-content">
+                      <li><a href="coop_1.html">Co-op/Internship</a></li>
+                      <li><a href="Projects.html">Professional Projects</a></li>
+                  </ul>
+              </li>
+              <li><a href="TechnicalSkills.html">Technical Skills</a></li>
+              <li><a href="SoftSkills.html">Soft Skills & Hobbies</a></li>
+            
+          </ul>
+      </nav>
+  </header>
 
+   
+    <main>
+        <section id="education">
+            <h2>Education</h2>
+            <p>Explore my academic background, including undergraduate and graduate studies. Click on each section to learn more about my coursework, projects, and achievements.</p>
+            
        
-        <br/>
-        <img src="Assets/IMG/Jerry.jpeg" alt="Jerry the Mouse">
-        <br/>
-        <iframe src="Assets/Files/sample1.pdf" title="SAmple PDF" width="600" height="900"></iframe>
-        <br/>
-        <video autoplay controls>
-            <source src="https://pqina.nl/media/sample-mp4-file.mp4" type="video/mp4">
-        </video>
-        <br/>
-        <table border="1">
-            <tr>
-              <th rowspan="2">Company</th>
-              <th>Contact</th>
-              <th>Country</th>
-            </tr>
-            <tr>
-             
-              <td colspan="2">Maria Anders</td>
-            
-              
-            </tr>
-            <tr>
-              <td>Centro comercial Moctezuma</td>
-              <td>Francisco Chang</td>
-              <td>Mexico</td>
-            </tr>
-          </table>
-          
-        
-            
-    </body>
+            <div class="education-links">
+              <a href="undergraduate.html" class="education-button" id="undergraduate-button">Undergraduate Education</a>
+              <a href="graduate.html" class="education-button" id="graduate-button">Graduate Education</a>
+          </div>
+        </section>
+    </main>
+
+  
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Education</h3>
+                <ul>
+                    <li><a href="education.html">Education Overview</a></li>
+                    <li><a href="undergraduate.html">Undergraduate</a></li>
+                    <li><a href="graduate.html">Graduate</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Experience</h3>
+                <ul>
+                    <li><a href="coop_1.html">Co-op/Internship</a></li>
+                    <li><a href="Projects.html">Professional Projects</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Skills</h3>
+                <ul>
+                    <li><a href="TechnicalSkills.html">Technical Skills</a></li>
+                    <li><a href="SoftSkills.html">Soft Skills & Hobbies</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <ul>
+                    <li>Email: <a href="mailto:yuyi.yan@mail.mcgill.ca">yuyi.yan@mail.mcgill.ca</a></li>
+                    <li>Phone: 647-889-1127</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>

@@ -1,0 +1,498 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Style */
+body {
+    font-family: "Oswald", sans-serif;
+    color: #333;
+    background-color: #FFF4B7; /* Light Yellow Background */
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+main {
+    flex: 1; 
+}
+
+/* Header Section */
+header {
+    background-color: #000B58; /* Dark Blue */
+    color: #FFF4B7; /* Light Yellow Text */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 10;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    background-color: #000B58; /* Dark Blue */
+}
+
+header nav ul li {
+    position: relative;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #FFF4B7; /* Light Yellow Text */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #003161; /* Navy Blue */
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position it below the menu item by default */
+    left: 0;
+    background-color: #FFF4B7; /* Light Yellow Background */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 20; /* Higher z-index to ensure it appears above other content */
+    min-width: 150px;
+    border-radius: 5px;
+    overflow: hidden;
+ 
+}
+
+/* Show dropdown on hover */
+header nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content li {
+    margin: 0;
+}
+
+.dropdown-content li a {
+    color: #000B58; /* Dark Blue Text */
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content li a:hover {
+    background-color: #003161; /* Navy Blue */
+    color: #37FF8B;
+}
+
+
+
+
+/* Degree Information Styling with Background Image and Overlay */
+#degree-info {
+    text-align: center;
+    padding: 40px 20px;
+    margin: 40px auto;
+    max-width: 800px; /* Wider for better layout with background */
+    color: #FFF4B7; /* Light text for readability */
+    background-image: url('https://micefa.org/wp-content/uploads/2011/10/campus-aerial-west-side-1024x682.jpg');
+    background-size: cover; /* Cover the entire section */
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Adding a subtle overlay for better readability */
+#degree-info::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 11, 88, 0.6); /* Dark blue overlay */
+    border-radius: 10px;
+    z-index: 1;
+}
+
+#degree-info * {
+    position: relative;
+    z-index: 2; /* Ensure content appears above the overlay */
+}
+
+.school-logo {
+    width: 100px; /* Adjust the logo size */
+    margin-bottom: 15px;
+}
+
+#degree-info h2 {
+    color: #FFF4B7; /* Light Yellow */
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#degree-info p {
+    color: #FFF4B7; /* Light Yellow */
+    font-weight: 500;
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+/* Icon styling */
+.icon {
+    font-size: 1.2em;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+/* Project Cards Section */
+#projects {
+    text-align: center;
+    padding: 30px;
+    background-color: ##FFF4B7;
+}
+
+#projects h2 {
+    color: #000B58;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+/* Project Card Styling with Shadow Lift and Slide-In Text Effect */
+.project-card {
+    background-color: #fffdd6;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 700px;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer; /* Shows it's interactive */
+}
+
+/* Shadow Lift on Hover */
+.project-card:hover {
+    transform: translateY(-10px); /* Lifts the card */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Slide-In Extra Info */
+.project-card .extra-info {
+    opacity: 0;
+    transform: translateY(20px); /* Hidden below initially */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.project-card:hover .extra-info {
+    opacity: 1;
+    transform: translateY(0); /* Slides up into view */
+}
+
+.project-card h3 {
+    color: #003161;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.project-card h3 .icon {
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+.project-card p {
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.project-card ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+    color: #333;
+}
+
+.project-card ul li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+/* Related Courses Section */
+#related-courses {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #FFF4B7; /* Light Yellow Background */
+    border-left: 5px solid #000B58; /* Dark Blue Border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 5px;
+}
+
+#related-courses h2 {
+    color: #000B58; /* Dark Blue */
+    font-size: 1.8em;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* Course List Styling */
+.course-list {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    gap: 10px;
+}
+
+.course-item {
+    display: contents; /* To align items in a grid without containers */
+}
+
+.course-code, .course-title, .course-grade {
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 1em;
+}
+
+.course-code {
+    color: #003161; /* Navy Blue */
+    font-weight: bold;
+}
+
+.course-title {
+    color: #333;
+}
+
+.course-grade {
+    color: #000B58; /* Dark Blue */
+    font-weight: bold;
+    text-align: right;
+}
+
+/* Last item in each row should not have a border */
+.course-list .course-item:last-child .course-code,
+.course-list .course-item:last-child .course-title,
+.course-list .course-item:last-child .course-grade {
+    border-bottom: none;
+}
+
+/* Button Container positioned at the bottom right of the content */
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 40px 260px 40px 40px; /* Adjust padding to place the button in the bottom right of the container */
+}
+
+/* Button Styling */
+.cta {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.cta span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 14px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active svg {
+  transform: scale(0.9);
+}
+
+/* Text Underline Animation */
+.hover-underline-animation {
+  position: relative;
+  color: black; /* Change to desired color */
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000; /* Color of underline */
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+/* Footer Section */
+footer {
+    background-color: #003161;
+    color: #FFF4B7;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 150px;
+}
+
+.footer-column h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #FFF4B7;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    color: #37FF8B;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #FFF4B7;
+}
+
+.footer-column ul li {
+    font-size: 0.9rem;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+/* Font Styling */
+.font-oswald {
+    font-family: "Oswald", sans-serif;
+    word-spacing: Normal;
+    letter-spacing: Normal;
+}
+
+.font-size-8 {
+    font-size: 8rem;
+    font-weight: 600;
+}
+
+
+/* Download Button Styling */
+.button {
+  position: relative;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  font-family: "Arial", sans-serif;
+  color: transparent;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 3px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.6); /* Light gray outline */
+  transition: color 0.5s ease;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 4px; /* Thickness of the vertical bar */
+  background-color: #37FF8B; /* Green color for the bar */
+  transition: left 0.5s ease;
+}
+
+.button:hover {
+  color: #37FF8B; /* Glow green color for text */
+  -webkit-text-stroke: 1px #37FF8B;
+  text-shadow: 0 0 10px #37FF8B, 0 0 20px #37FF8B, 0 0 30px #37FF8B;
+}
+
+.button:hover::before {
+  left: calc(100% - 4px); /* Move the bar to the right */
+}
+
+.hover-text {
+  display: inline-block;
+  color: transparent; /* Keep color transparent initially */
+  -webkit-text-stroke: inherit; /* Match stroke color from parent */
+}
