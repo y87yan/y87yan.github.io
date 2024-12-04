@@ -1,171 +1,179 @@
-
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en"> <!-- Declares the language of the document -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Undergraduate - Leslie Yan</title>
-    <link rel="stylesheet" href="assets/css/undergraduate.css"> <!-- Link to your CSS file -->
+    <meta charset="UTF-8"> <!-- Specifies character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Enables responsive design -->
+    <title>Undergraduate - Leslie Yan</title> <!-- Title of the webpage displayed in the browser tab -->
+    
+    <!-- Link to the external CSS file for custom styles -->
+    <link rel="stylesheet" href="assets/css/undergraduate.css"> 
+    
+    <!-- Preconnect to Google Fonts for optimization -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Font: Oswald for typography -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header Section (Optional, if consistent across pages) -->
+    <!-- Header Section -->
     <header>
-      <h1 class="font-oswald font-size-8">Leslie Yan</h1>
-      <p class="font-oswald">Data Analyst</p>
-      <a href="path-to-your-cv.pdf" class="button" download>
-        <span class="hover-text" data-text="Download CV">Download CV</span>
-      </a>
-      <nav>
-          <ul>
-            <li><a href="index.html">About</a></li>
-            <li class="dropdown">
-                <a href="education.html">Education</a>
-                <ul class="dropdown-content">
-                    <li><a href="undergraduate.html">Undergraduate</a></li>
-                    <li><a href="graduate.html">Graduate</a></li>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a href="ProfessionalExperience.html">Experience</a>
-                <ul class="dropdown-content">
-                    <li><a href="coop_1.html">Co-op/Internship</a></li>
-                    <li><a href="Projects.html">Professional Projects</a></li>
-                </ul>
-            </li>
-            <li><a href="TechnicalSkills.html">Technical Skills</a></li>
-            <li><a href="SoftSkills.html">Soft Skills & Hobbies</a></li>
-            
-          </ul>
-      </nav>
-  </header>
+        <h1 class="font-oswald font-size-8">Leslie Yan</h1> <!-- Page header with name -->
+        <p class="font-oswald">Data Analyst</p> <!-- Professional designation -->
+        
+        <!-- Download button for CV -->
+        <a href="path-to-cv.pdf" class="button" download>
+            <span class="hover-text" data-text="Download CV">Download CV</span>
+        </a>
 
-    <!-- Main Content for Education Page -->
+        <!-- Navigation Bar -->
+        <nav>
+            <ul>
+                <li><a href="index.html">About</a></li> <!-- Link to About page -->
+                <li class="dropdown">
+                    <a href="education.html">Education</a> <!-- Education dropdown menu -->
+                    <ul class="dropdown-content">
+                        <li><a href="undergraduate.html">Undergraduate</a></li>
+                        <li><a href="graduate.html">Graduate</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="ProfessionalExperience.html">Experience</a> <!-- Experience dropdown menu -->
+                    <ul class="dropdown-content">
+                        <li><a href="coop_1.html">Co-op/Internship</a></li>
+                        <li><a href="Projects.html">Professional Projects</a></li>
+                    </ul>
+                </li>
+                <li><a href="TechnicalSkills.html">Technical Skills</a></li> <!-- Technical Skills page -->
+                <li><a href="SoftSkills.html">Soft Skills & Hobbies</a></li> <!-- Soft Skills & Hobbies page -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content for Undergraduate Page -->
     <main>
-      <!-- Degree Information Section -->
-      <section id="degree-info">
-        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/6e/University_of_Waterloo_seal.svg/1200px-University_of_Waterloo_seal.svg.png" 
-             alt="University of Waterloo Logo" class="school-logo">
-        <h2> Bachelor of Statistics</h2>
-        <p><strong>Honours, Co-operative Program</strong></p>
-        <p>University of Waterloo, Waterloo, ON</p>
-        <p>September 2017 – December 2022</p>
-    </section>
-    
+        <!-- Degree Information Section -->
+        <section id="degree-info">
+            <!-- University of Waterloo Logo -->
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/6e/University_of_Waterloo_seal.svg/1200px-University_of_Waterloo_seal.svg.png" 
+                 alt="University of Waterloo Logo" class="school-logo">
+            <h2>Bachelor of Statistics</h2> <!-- Degree title -->
+            <p><strong>Honours, Co-operative Program</strong></p>
+            <p>University of Waterloo, Waterloo, ON</p> <!-- University name and location -->
+            <p>September 2017 – December 2022</p> <!-- Program duration -->
+        </section>
+        
+        <!-- Project Cards Section -->
+        <section id="projects">
+            <h2>Highlighted Projects</h2>
+            
+            <!-- Project 1: Briefing Note -->
+            <div class="project-card">
+                <h3><span class="icon">📝</span> Briefing Note on Automation, AI, and COVID-19</h3>
+                <p><strong>Course:</strong> MTHEL 300 - Professional Communication in Statistics and Actuarial Science</p>
+                <p><strong>Duration:</strong> September 2021 – December 2021</p>
+                <ul>
+                    <li>Developed a briefing note for the Canadian government on "Automation, AI, and COVID-19."</li>
+                    <li>Conducted extensive literature research and summarized findings for a critical analysis brief.</li>
+                    <li>Presented and gathered feedback, demonstrating communication and presentation skills.</li>
+                </ul>
+            </div>
 
-      <!-- Project Cards Section -->
-      <section id="projects">
-          <h2>Highlighted Projects</h2>
+            <!-- Project 2: Prediction of Protein Location -->
+            <div class="project-card">
+                <h3><span class="icon">🔬</span> Prediction of Protein Location Based on Machine Learning</h3>
+                <p><strong>Course:</strong> STAT 441 - Statistical Learning</p>
+                <p><strong>Duration:</strong> February 2021 – April 2021</p>
+                <ul>
+                    <li>Developed a model to classify protein location using various machine learning techniques in R Studio.</li>
+                    <li>Trained models using decision trees, SVM, K-nearest neighbors, Naïve Bayes, and Random Forest.</li>
+                    <li>Performed data preprocessing, ensuring model accuracy, and achieved a high-performing SVM model.</li>
+                </ul>
+            </div>
+        </section>
 
-          <!-- Project 1: Briefing Note -->
-          <div class="project-card">
-              <h3><span class="icon">📝</span> Briefing Note on Automation, AI, and COVID-19</h3>
-              <p><strong>Course:</strong> MTHEL 300 - Professional Communication in Statistics and Actuarial Science</p>
-              <p><strong>Duration:</strong> September 2021 – December 2021</p>
-              <ul>
-                  <li>Developed a briefing note for the Canadian government on "Automation, AI, and COVID-19."</li>
-                  <li>Conducted extensive literature research and summarized findings for a critical analysis brief.</li>
-                  <li>Presented and gathered feedback, demonstrating communication and presentation skills.</li>
-              </ul>
-          </div>
+        <!-- Related Courses Section -->
+        <section id="related-courses">
+            <h2>Related Courses</h2>
+            <div class="course-list">
+                <!-- Course Item -->
+                <div class="course-item">
+                    <span class="course-code">STAT331</span>
+                    <span class="course-title">Applied Linear Models</span>
+                    <span class="course-grade">90</span>
+                </div>
+                <div class="course-item">
+                    <span class="course-code">STAT332</span>
+                    <span class="course-title">Sampling and Experimental Design</span>
+                    <span class="course-grade">90</span>
+                </div>
+                <div class="course-item">
+                    <span class="course-code">STAT333</span>
+                    <span class="course-title">Applied Probability</span>
+                    <span class="course-grade">96</span>
+                </div>
+                <div class="course-item">
+                    <span class="course-code">STAT443</span>
+                    <span class="course-title">Forecasting</span>
+                    <span class="course-grade">81</span>
+                </div>
+                <div class="course-item">
+                    <span class="course-code">STAT330</span>
+                    <span class="course-title">Mathematical Statistics</span>
+                    <span class="course-grade">85</span>
+                </div>
+                <div class="course-item">
+                    <span class="course-code">STAT441</span>
+                    <span class="course-title">Statistical Learning – Classification</span>
+                    <span class="course-grade">80</span>
+                </div>
+                <div class="course-item">
+                    <span class="course-code">STAT442</span>
+                    <span class="course-title">Data Visualization</span>
+                    <span class="course-grade">81</span>
+                </div>
+                <div class="course-item">
+                    <span class="course-code">STAT430</span>
+                    <span class="course-title">Experimental Design</span>
+                    <span class="course-grade">95</span>
+                </div>
+                <div class="course-item">
+                    <span class="course-code">STAT431</span>
+                    <span class="course-title">Generalized Linear Models and their Application</span>
+                    <span class="course-grade">94</span>
+                </div>
+            </div>
+        </section>
 
-          <!-- Project 2: Prediction of Protein Location -->
-          <div class="project-card">
-              <h3><span class="icon">🔬</span> Prediction of Protein Location Based on Machine Learning</h3>
-              <p><strong>Course:</strong> STAT 441 - Statistical Learning</p>
-              <p><strong>Duration:</strong> February 2021 – April 2021</p>
-              <ul>
-                  <li>Developed a model to classify protein location using various machine learning techniques in R Studio.</li>
-                  <li>Trained models using decision trees, SVM, K-nearest neighbors, Naïve Bayes, and Random Forest.</li>
-                  <li>Performed data preprocessing, ensuring model accuracy, and achieved a high-performing SVM model.</li>
-              </ul>
-          </div>
-      </section>
-      <section id="related-courses">
-        <h2>Related Courses</h2>
-        <div class="course-list">
-            <div class="course-item">
-                <span class="course-code">STAT331</span>
-                <span class="course-title">Applied Linear Models</span>
-                <span class="course-grade">90</span>
-            </div>
-            <div class="course-item">
-                <span class="course-code">STAT332</span>
-                <span class="course-title">Sampling and Experimental Design</span>
-                <span class="course-grade">90</span>
-            </div>
-            <div class="course-item">
-                <span class="course-code">STAT333</span>
-                <span class="course-title">Applied Probability</span>
-                <span class="course-grade">96</span>
-            </div>
-            <div class="course-item">
-                <span class="course-code">STAT443</span>
-                <span class="course-title">Forecasting</span>
-                <span class="course-grade">81</span>
-            </div>
-            <div class="course-item">
-                <span class="course-code">STAT330</span>
-                <span class="course-title">Mathematical Statistics</span>
-                <span class="course-grade">85</span>
-            </div>
-            <div class="course-item">
-                <span class="course-code">STAT441</span>
-                <span class="course-title">Statistical Learning – Classification</span>
-                <span class="course-grade">80</span>
-            </div>
-            <div class="course-item">
-                <span class="course-code">STAT442</span>
-                <span class="course-title">Data Visualization</span>
-                <span class="course-grade">81</span>
-            </div>
-            <div class="course-item">
-                <span class="course-code">STAT430</span>
-                <span class="course-title">Experimental Design</span>
-                <span class="course-grade">95</span>
-            </div>
-            <div class="course-item">
-                <span class="course-code">STAT431</span>
-                <span class="course-title">Generalized Linear Models and their Application</span>
-                <span class="course-grade">94</span>
-            </div>
+        <!-- Button to navigate to Graduate Page -->
+        <div class="button-container">
+            <button class="cta" onclick="window.location.href='graduate.html'">
+                <span class="hover-underline-animation"> Graduate Page </span>
+                <svg
+                  id="arrow-horizontal"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="10"
+                  viewBox="0 0 46 16"
+                >
+                  <path
+                    id="Path_10"
+                    data-name="Path 10"
+                    d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                    transform="translate(30)"
+                  ></path>
+                </svg>
+            </button>
         </div>
+    </main>
 
-        
-        
-        
-    </section>
-    <div class="button-container">
-      <button class="cta" onclick="window.location.href='graduate.html'">
-        <span class="hover-underline-animation"> Graduate Page </span>
-        <svg
-          id="arrow-horizontal"
-          xmlns="http://www.w3.org/2000/svg"
-          width="30"
-          height="10"
-          viewBox="0 0 46 16"
-        >
-          <path
-            id="Path_10"
-            data-name="Path 10"
-            d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
-            transform="translate(30)"
-          ></path>
-        </svg>
-      </button>
-    </div>
-</main>
-
-  
+    <!-- Footer Section -->
     <footer id="contact">
         <div class="footer-container">
             <div class="footer-column">
                 <h3>About</h3>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Me</a></li>
-                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
             <div class="footer-column">
@@ -179,6 +187,7 @@
             <div class="footer-column">
                 <h3>Experience</h3>
                 <ul>
+                    <li><a href="ProfessionalExperience.html">Experience Overview</a></li>
                     <li><a href="coop_1.html">Co-op/Internship</a></li>
                     <li><a href="Projects.html">Professional Projects</a></li>
                 </ul>

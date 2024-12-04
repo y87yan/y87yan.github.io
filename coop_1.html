@@ -1,116 +1,141 @@
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Specifies the character encoding for the HTML document -->
     <meta charset="UTF-8">
+    
+    <!-- Ensures proper rendering and touch zooming on mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Sets the title of the webpage, displayed on the browser tab -->
     <title>Co-op - Leslie Yan</title>
+    
+    <!-- Links the external CSS file for styling this page -->
     <link rel="stylesheet" href="assets/css/coop.css"> 
+    
+    <!-- Preconnect optimizes loading of Google Fonts by connecting early -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Includes the Oswald font family from Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-   
+    <!-- Header Section: Contains the title, role, and navigation menu -->
     <header>
-      <h1 class="font-oswald font-size-8">Leslie Yan</h1>
-      <p class="font-oswald">Data Analyst</p>
-      <a href="path-to-your-cv.pdf" class="button" download>
-        <span class="hover-text" data-text="Download CV">Download CV</span>
-      </a>
-      <nav>
-          <ul>
-            <li><a href="index.html">About</a></li>
-            <li class="dropdown">
-                <a href="education.html">Education</a>
-                <ul class="dropdown-content">
-                    <li><a href="undergraduate.html">Undergraduate</a></li>
-                    <li><a href="graduate.html">Graduate</a></li>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a href="ProfessionalExperience.html">Experience</a>
-                <ul class="dropdown-content">
-                    <li><a href="coop_1.html">Co-op/Internship</a></li>
-                    <li><a href="Projects.html">Professional Projects</a></li>
-                </ul>
-            </li>
-            <li><a href="TechnicalSkills.html">Technical Skills</a></li>
-            <li><a href="SoftSkills.html">Soft Skills & Hobbies</a></li>
-          </ul>
-      </nav>
-  </header>
-
-   
-    <main>
-      <div class="experience-grid">
-
-        <div class="experience-card">
-            <div class="card-inner">
-                <div class="card-front">
-                    <h3>Jan 2019 - Apr 2019</h3>
-                    <p>Instructional Support Assistant - Computer Science</p>
-      
-                    <p>University of Waterloo, Computer Science Department</p>
-                    <p>Waterloo, ON, CA</p>
-                </div>
-                <div class="card-back">
-                  <div class="left-section">
-                    <p>Instructional Support Assistant</p>
-                    <p>Computer Science</p>
-                </div>
-                <div class="right-section">
-                  <ul>
-                      <p><strong>Data Analysis & Grading:</strong> Analyzed performance data with Excel, VBA, and Python for precise final grade reporting.</p>
-                      <p><strong>Tutorial Content Design:</strong> Developed data-driven materials to support learning based on student performance trends.</p>
-                      <p><strong>Automated Reports:</strong> Created visualizations for instructors to review tutorial effectiveness and grading trends.</p>
-                      <p><strong>Student Assistance:</strong> Simplified complex data insights to help students during tutorials and office hours.</p>
-                  </ul>
-              </div>
-                </div>
-            </div>
-        </div>
+        <!-- Main heading displaying the name -->
+        <h1 class="font-oswald font-size-8">Leslie Yan</h1>
         
-
-        <div class="experience-card">
-            <div class="card-inner">
-                <div class="card-front">
-                    <h3>Jan 2022 - Aug 2022</h3>
-                    <p class="role">Instructional Support Assistant – Computer Science</p>
-                    <p class="location">University of Waterloo, Computer Science Department</p>
-                    <p class="city">Waterloo, ON, CA</p>
-                </div>
-                <div class="card-back">
-                    <div class="left-section">
-                    <p>Instructional Support Assistant</p>
-                    <p>Computer Science</p>
-                    </div>
-                    <div class="right-section">
-                    <ul>
-                        <p><strong>Team Leadership:</strong> Managed a team of assistants to ensure grading consistency and data management.</p>
-                        <p><strong>Automated Reporting:</strong> Developed automated reports providing faculty insights on student progress.</p>
-                        <p><strong>Tutorial Improvement:</strong> Enhanced tutorial content by analyzing student performance.</p>
-                        <p><strong>Workflow Management:</strong> Used Python to automate grading tasks, improving reporting efficiency.</p>
+        <!-- Subheading displaying the role -->
+        <p class="font-oswald">Data Analyst</p>
+        
+        <!-- Download CV button -->
+        <a href="path-to-your-cv.pdf" class="button" download>
+            <span class="hover-text" data-text="Download CV">Download CV</span>
+        </a>
+        
+        <!-- Navigation menu for navigating between pages -->
+        <nav>
+            <ul>
+                <!-- Links to different pages of the website -->
+                <li><a href="index.html">About</a></li>
+                <li class="dropdown">
+                    <a href="education.html">Education</a>
+                    <!-- Dropdown links for education details -->
+                    <ul class="dropdown-content">
+                        <li><a href="undergraduate.html">Undergraduate</a></li>
+                        <li><a href="graduate.html">Graduate</a></li>
                     </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="ProfessionalExperience.html">Experience</a>
+                    <!-- Dropdown links for professional experience details -->
+                    <ul class="dropdown-content">
+                        <li><a href="coop_1.html">Co-op/Internship</a></li>
+                        <li><a href="Projects.html">Professional Projects</a></li>
+                    </ul>
+                </li>
+                <li><a href="TechnicalSkills.html">Technical Skills</a></li>
+                <li><a href="SoftSkills.html">Soft Skills & Hobbies</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section: Displays Co-op experience in a card format -->
+    <main>
+        <div class="experience-grid">
+            <!-- Card 1: Details for the first co-op experience -->
+            <div class="experience-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <!-- Front side content of the card -->
+                        <h3>Jan 2019 - Apr 2019</h3>
+                        <p>Instructional Support Assistant - Computer Science</p>
+                        <p>University of Waterloo, Computer Science Department</p>
+                        <p>Waterloo, ON, CA</p>
+                    </div>
+                    <div class="card-back">
+                        <!-- Back side content of the card -->
+                        <div class="left-section">
+                            <p>Instructional Support Assistant</p>
+                            <p>Computer Science</p>
+                        </div>
+                        <div class="right-section">
+                            <ul>
+                                <p><strong>Data Analysis & Grading:</strong> Analyzed performance data with Excel, VBA, and Python for precise final grade reporting.</p>
+                                <p><strong>Tutorial Content Design:</strong> Developed data-driven materials to support learning based on student performance trends.</p>
+                                <p><strong>Automated Reports:</strong> Created visualizations for instructors to review tutorial effectiveness and grading trends.</p>
+                                <p><strong>Student Assistance:</strong> Simplified complex data insights to help students during tutorials and office hours.</p>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Card 2: Details for the second co-op experience -->
+            <div class="experience-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <!-- Front side content of the card -->
+                        <h3>Jan 2022 - Aug 2022</h3>
+                        <p class="role">Instructional Support Assistant – Computer Science</p>
+                        <p class="location">University of Waterloo, Computer Science Department</p>
+                        <p class="city">Waterloo, ON, CA</p>
+                    </div>
+                    <div class="card-back">
+                        <!-- Back side content of the card -->
+                        <div class="left-section">
+                            <p>Instructional Support Assistant</p>
+                            <p>Computer Science</p>
+                        </div>
+                        <div class="right-section">
+                            <ul>
+                                <p><strong>Team Leadership:</strong> Managed a team of assistants to ensure grading consistency and data management.</p>
+                                <p><strong>Automated Reporting:</strong> Developed automated reports providing faculty insights on student progress.</p>
+                                <p><strong>Tutorial Improvement:</strong> Enhanced tutorial content by analyzing student performance.</p>
+                                <p><strong>Workflow Management:</strong> Used Python to automate grading tasks, improving reporting efficiency.</p>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     </main>
-    
-    
 
-  
+    <!-- Footer Section: Contains links to different pages and contact details -->
     <footer id="contact">
         <div class="footer-container">
             <div class="footer-column">
+                <!-- Footer links for "About" section -->
                 <h3>About</h3>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Me</a></li>
-                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
             <div class="footer-column">
+                <!-- Footer links for "Education" section -->
                 <h3>Education</h3>
                 <ul>
                     <li><a href="education.html">Education Overview</a></li>
@@ -119,6 +144,7 @@
                 </ul>
             </div>
             <div class="footer-column">
+                <!-- Footer links for "Experience" section -->
                 <h3>Experience</h3>
                 <ul>
                     <li><a href="coop_1.html">Co-op/Internship</a></li>
@@ -126,6 +152,7 @@
                 </ul>
             </div>
             <div class="footer-column">
+                <!-- Footer links for "Skills" section -->
                 <h3>Skills</h3>
                 <ul>
                     <li><a href="TechnicalSkills.html">Technical Skills</a></li>
@@ -133,6 +160,7 @@
                 </ul>
             </div>
             <div class="footer-column">
+                <!-- Footer links for contact details -->
                 <h3>Contact</h3>
                 <ul>
                     <li>Email: <a href="mailto:yuyi.yan@mail.mcgill.ca">yuyi.yan@mail.mcgill.ca</a></li>
@@ -143,3 +171,4 @@
     </footer>
 </body>
 </html>
+```

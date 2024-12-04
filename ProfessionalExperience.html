@@ -1,89 +1,136 @@
+<!DOCTYPE html>
 <html lang="en">
+<!-- Root HTML Element -->
+<!-- Sets the language of the document to English -->
 <head>
+    <!-- Metadata Section -->
     <meta charset="UTF-8">
+    <!-- Enables responsive design by setting the viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title for the browser tab -->
     <title>Professional Experience - Leslie Yan</title>
-    <link rel="stylesheet" href="assets/css/professional.css"> 
+    <!-- Links to the stylesheet for the professional experience page -->
+    <link rel="stylesheet" href="assets/css/professional.css">
+    <!-- Preloading Google Fonts for faster rendering -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Using the "Oswald" font family for consistent typography -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    
+    <!-- Header Section -->
+    <!-- Displays the name, job title, and navigation menu -->
     <header>
-      <h1 class="font-oswald font-size-8">Leslie Yan</h1>
-      <p class="font-oswald">Data Analyst</p>
-      <a href="path-to-your-cv.pdf" class="button" download>
-        <span class="hover-text" data-text="Download CV">Download CV</span>
-      </a>
-      <nav>
-          <ul>
-            <li><a href="index.html">About</a></li>
-            <li class="dropdown">
-                <a href="education.html">Education</a>
-                <ul class="dropdown-content">
+        <h1 class="font-oswald font-size-8">Leslie Yan</h1>
+        <p class="font-oswald">Data Analyst</p>
+        <!-- Button to download the CV -->
+        <a href="path-to-your-cv.pdf" class="button" download>
+            <span class="hover-text" data-text="Download CV">Download CV</span>
+        </a>
+        <!-- Navigation Bar -->
+        <!-- Contains links to navigate to other sections of the website -->
+        <nav>
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li class="dropdown">
+                    <a href="education.html">Education</a>
+                    <ul class="dropdown-content">
+                        <li><a href="undergraduate.html">Undergraduate</a></li>
+                        <li><a href="graduate.html">Graduate</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="ProfessionalExperience.html">Experience</a>
+                    <ul class="dropdown-content">
+                        <li><a href="coop_1.html">Co-op/Internship</a></li>
+                        <li><a href="projects.html">Professional Projects</a></li>
+                    </ul>
+                </li>
+                <li><a href="TechnicalSkills.html">Technical Skills</a></li>
+                <li><a href="SoftSkills.html">Soft Skills & Hobbies</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <!-- Highlights professional experience with cards -->
+    <main>
+        <section id="professional-experience-main">
+            <h2>Professional Experience</h2>
+            <p>Explore my journey through internships, co-ops, and professional projects.</p>
+            <!-- Card Layout for Experience -->
+            <div class="experience-cards">
+                <div class="card">
+                    <p class="box-1">
+                        <a href="coop_1.html"><span>Co-op Experience</span></a>
+                    </p>
+                    <p class="box-2">
+                        <a href="projects.html"><span>Professional Projects</span></a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <!-- Includes navigation links and contact information -->
+    <footer id="contact">
+        <div class="footer-container">
+            <!-- About Section -->
+            <div class="footer-column">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </div>
+            <!-- Education Section -->
+            <div class="footer-column">
+                <h3>Education</h3>
+                <ul>
+                    <li><a href="education.html">Education Overview</a></li>
                     <li><a href="undergraduate.html">Undergraduate</a></li>
                     <li><a href="graduate.html">Graduate</a></li>
                 </ul>
-            </li>
-            <li class="dropdown">
-                <a href="ProfessionalExperience.html">Experience</a>
-                <ul class="dropdown-content">
+            </div>
+            <!-- Experience Section -->
+            <div class="footer-column">
+                <h3>Experience</h3>
+                <ul>
                     <li><a href="coop_1.html">Co-op/Internship</a></li>
-                    <li><a href="projects.html">Professional Projects</a></li>
+                    <li><a href="Projects.html">Professional Projects</a></li>
                 </ul>
-            </li>
-            <li><a href="TechnicalSkills.html">Technical Skills</a></li>
-            <li><a href="SoftSkills.html">Soft Skills & Hobbies</a></li>
-          </ul>
-      </nav>
-  </header>
-
-  
-    <main>
-      <section id="professional-experience-main">
-        <h2>Professional Experience</h2>
-        <p>Explore my journey through internships, co-ops, and professional projects.</p>
-    
-        <div class="experience-cards">
-          <div class="card">
-              <p class="box-1">
-                  <a href="coop_1.html"><span>Co-op Experience</span></a>
-              </p>
-              <p class="box-2">
-                  <a href="projects.html"><span>Professional Projects</span></a>
-              </p>
-          </div>
-      </div>
-      
-    </section>
-    
-    
-    
-     
-    
-  </main>
-
-  
-    <footer id="contact">
-        <p>Contact Information:</p>
-        <p>Email: yuyi.yan@mail.mcgill.ca</p>
-        <p>Phone Number: 647-889-1127</p>
-        
+            </div>
+            <!-- Skills Section -->
+            <div class="footer-column">
+                <h3>Skills</h3>
+                <ul>
+                    <li><a href="TechnicalSkills.html">Technical Skills</a></li>
+                    <li><a href="SoftSkills.html">Soft Skills & Hobbies</a></li>
+                </ul>
+            </div>
+            <!-- Contact Information -->
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <ul>
+                    <li>Email: <a href="mailto:yuyi.yan@mail.mcgill.ca">yuyi.yan@mail.mcgill.ca</a></li>
+                    <li>Phone: 647-889-1127</li>
+                </ul>
+            </div>
+        </div>
     </footer>
 
+    <!-- JavaScript -->
+    <!-- Adds functionality to make the entire card clickable -->
     <script>
-  
-      document.querySelectorAll('.card').forEach(card => {
-     
-        card.addEventListener('click', function() {
-          const link = card.querySelector('a');
-          if (link) {
-            window.location.href = link.href; 
-          }
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('click', function() {
+                const link = card.querySelector('a');
+                if (link) {
+                    window.location.href = link.href; 
+                }
+            });
         });
-      });
     </script>
-    
 </body>
 </html>

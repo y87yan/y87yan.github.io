@@ -69,6 +69,13 @@ header nav ul li a:hover {
     background-color: #003161; /* Navy Blue */
 }
 
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 /* Dropdown Menu */
 .dropdown {
     position: relative;
@@ -130,8 +137,8 @@ header nav ul li:hover .dropdown-content {
 /* Skills Container */
 .skills-container {
     width: 80%;
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 800px; /*Caps the container width at 800px to ensure it doesn’t stretch too wide on larger screens.*/
+    margin: 0 auto; /*Centers the container horizontally within its parent.*/
 }
 
 .skill {
@@ -142,28 +149,28 @@ header nav ul li:hover .dropdown-content {
 .skill span {
     font-weight: bold;
     color: #003161;
-    display: block;
-    margin-bottom: 5px;
+    display: block; /*Ensures the skill name spans the full width of its container.*/
+    margin-bottom: 5px; /*Adds a small space between the skill name and the progress bar.*/
 }
 
 .progress {
     background-color: #eee;
     border-radius: 10px;
-    overflow: hidden;
-    height: 20px;
+    overflow: hidden; /*Ensures the progress-bar doesn’t overflow outside the rounded corners.*/
+    height: 20px; /*Fixes the height of the progress bar.*/
 }
 
 .progress-bar {
-    height: 100%;
+    height: 100%; /*Ensures the progress bar spans the full height of the .progress container.*/
     background: linear-gradient(90deg, #37FF8B, #003161);
-    width: 0; 
-    transition: width 1.5s ease; 
+    width: 0; /*Starts the progress bar with zero width, allowing it to animate as it fills.*/
+    transition: width 1.5s ease; /*Smoothly animates the width change over 1.5 seconds when the progress bar is updated.*/
     border-radius: 10px;
 }
 
 
 .skill .progress-bar {
-    animation: fill 1.5s forwards;
+    animation: fill 1.5s forwards;/**/
 }
 
 .skill .progress-bar {
@@ -221,7 +228,7 @@ footer {
 .footer-column ul li a {
     color: #37FF8B;
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 1rem;
     transition: color 0.3s ease;
 }
 
@@ -230,7 +237,7 @@ footer {
 }
 
 .footer-column ul li {
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 /* Mobile Responsiveness */

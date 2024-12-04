@@ -1,71 +1,93 @@
-
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en"> <!-- Specifies the language of the webpage content -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Education - Leslie Yan</title>
+    <meta charset="UTF-8"> <!-- Sets the character encoding for the webpage -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures responsive design on mobile devices -->
+    <title>Education - Leslie Yan</title> <!-- Title displayed on the browser tab -->
+
+    <!-- Link to external stylesheet for custom design -->
     <link rel="stylesheet" href="assets/css/educationStyle.css"> 
+    
+    <!-- Preconnect to Google Fonts for optimized loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Import the Oswald font family -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
 <body>
-   
+    <!-- Header Section -->
     <header>
-      <h1 class="font-oswald font-size-8">Leslie Yan</h1>
-      <p class="font-oswald">Data Analyst</p>
-      <a href="path-to-your-cv.pdf" class="button" download>
-        <span class="hover-text" data-text="Download CV">Download CV</span>
-      </a>
-      <nav>
-          <ul>
-              <li><a href="index.html">About</a></li>
-              <li class="dropdown">
-                  <a href="education.html">Education</a>
-                  <ul class="dropdown-content">
-                      <li><a href="undergraduate.html">Undergraduate</a></li>
-                      <li><a href="graduate.html">Graduate</a></li>
-                  </ul>
-              </li>
-              <li class="dropdown">
-                  <a href="ProfessionalExperience.html">Experience</a>
-                  <ul class="dropdown-content">
-                      <li><a href="coop_1.html">Co-op/Internship</a></li>
-                      <li><a href="Projects.html">Professional Projects</a></li>
-                  </ul>
-              </li>
-              <li><a href="TechnicalSkills.html">Technical Skills</a></li>
-              <li><a href="SoftSkills.html">Soft Skills & Hobbies</a></li>
-            
-          </ul>
-      </nav>
-  </header>
+        <!-- Website title and professional designation -->
+        <h1 class="font-oswald font-size-8">Leslie Yan</h1>
+        <p class="font-oswald">Data Analyst</p>
+        
+        <!-- Downloadable CV button -->
+        <a href="path-to-your-cv.pdf" class="button" download>
+            <span class="hover-text" data-text="Download CV">Download CV</span>
+        </a>
+        
+        <!-- Navigation bar -->
+        <nav>
+            <ul>
+                <!-- Link to the About section -->
+                <li><a href="index.html">About</a></li>
+                
+                <!-- Dropdown menu for Education -->
+                <li class="dropdown">
+                    <a href="education.html">Education</a>
+                    <ul class="dropdown-content">
+                        <li><a href="undergraduate.html">Undergraduate</a></li>
+                        <li><a href="graduate.html">Graduate</a></li>
+                    </ul>
+                </li>
+                
+                <!-- Dropdown menu for Experience -->
+                <li class="dropdown">
+                    <a href="ProfessionalExperience.html">Experience</a>
+                    <ul class="dropdown-content">
+                        <li><a href="coop_1.html">Co-op/Internship</a></li>
+                        <li><a href="Projects.html">Professional Projects</a></li>
+                    </ul>
+                </li>
+                
+                <!-- Links to other sections -->
+                <li><a href="TechnicalSkills.html">Technical Skills</a></li>
+                <li><a href="SoftSkills.html">Soft Skills & Hobbies</a></li>
+            </ul>
+        </nav>
+    </header>
 
-   
+    <!-- Main Content -->
     <main>
+        <!-- Education Section -->
         <section id="education">
-            <h2>Education</h2>
-            <p>Explore my academic background, including undergraduate and graduate studies. Click on each section to learn more about my coursework, projects, and achievements.</p>
+            <h2>Education</h2> <!-- Title of the section -->
+            <p>
+                Explore my academic background, including undergraduate and graduate studies. 
+                Click on each section to learn more about my coursework, projects, and achievements.
+            </p>
             
-       
+            <!-- Buttons linking to Undergraduate and Graduate pages -->
             <div class="education-links">
-              <a href="undergraduate.html" class="education-button" id="undergraduate-button">Undergraduate Education</a>
-              <a href="graduate.html" class="education-button" id="graduate-button">Graduate Education</a>
-          </div>
+                <a href="undergraduate.html" class="education-button" id="undergraduate-button">Undergraduate Education</a>
+                <a href="graduate.html" class="education-button" id="graduate-button">Graduate Education</a>
+            </div>
         </section>
     </main>
 
-  
+    <!-- Footer Section -->
     <footer id="contact">
         <div class="footer-container">
+            <!-- Footer Column: About -->
             <div class="footer-column">
                 <h3>About</h3>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Me</a></li>
-                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
+            
+            <!-- Footer Column: Education -->
             <div class="footer-column">
                 <h3>Education</h3>
                 <ul>
@@ -74,13 +96,18 @@
                     <li><a href="graduate.html">Graduate</a></li>
                 </ul>
             </div>
+            
+            <!-- Footer Column: Experience -->
             <div class="footer-column">
                 <h3>Experience</h3>
                 <ul>
+                    <li><a href="ProfessionalExperience.html">Experience Overview</a></li>
                     <li><a href="coop_1.html">Co-op/Internship</a></li>
                     <li><a href="Projects.html">Professional Projects</a></li>
                 </ul>
             </div>
+            
+            <!-- Footer Column: Skills -->
             <div class="footer-column">
                 <h3>Skills</h3>
                 <ul>
@@ -88,6 +115,8 @@
                     <li><a href="SoftSkills.html">Soft Skills & Hobbies</a></li>
                 </ul>
             </div>
+            
+            <!-- Footer Column: Contact -->
             <div class="footer-column">
                 <h3>Contact</h3>
                 <ul>
@@ -99,3 +128,4 @@
     </footer>
 </body>
 </html>
+

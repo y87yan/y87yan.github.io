@@ -73,6 +73,14 @@ header nav ul li a:hover {
     color: #37FF8B;
 }
 
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
 /* Dropdown Menu */
 .dropdown {
     position: relative;
@@ -112,6 +120,7 @@ header nav ul li:hover .dropdown-content {
     background-color: #003161; /* Navy Blue */
 }
 
+
 /* Experience Grid */
 .experience-grid {
     display: flex;
@@ -121,15 +130,19 @@ header nav ul li:hover .dropdown-content {
     max-width: 900px;
     margin: 20px auto;
 }
+
+
 .experience-card {
     display: flex;
     color: #FFF4B7; /* Light yellow text */
     padding: 20px;
     border-radius: 10px;
     gap: 20px; /* Space between left and right sections */
-    
+    overflow: hidden; /* Ensures the overlay stays within rounded corners */
+    position: relative;
    
 }
+
 
 .left-section {
     flex: 1.5; /* Makes the left section wider */
@@ -152,6 +165,7 @@ header nav ul li:hover .dropdown-content {
     transition: transform 0.6s;
     transform-style: preserve-3d;
     cursor: pointer;
+    perspective: 1000px;
 }
 
 .experience-card:hover .card-inner {
@@ -174,14 +188,17 @@ header nav ul li:hover .dropdown-content {
 .card-front {
     background-size: cover;
     background-position: center;
-    color: #fcf0ac;
+    /*color: #fcf0ac;*/
     font-size: 1.2rem;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 11, 88, 0.6); /* Dark blue overlay */
+    
 
     
 }
 
 .experience-card:nth-child(1) .card-front {
+    background-color: rgba(0, 11, 88, 0.6); /* Dark blue overlay */
     background-image: url('https://cs.uwaterloo.ca/sites/default/files/uploads/images/c017066-190627-computer-science-stock-photography-9796.gif');
     
 }
@@ -260,7 +277,7 @@ footer {
 .footer-column ul li a {
     color: #37FF8B;
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 1rem;
     transition: color 0.3s ease;
 }
 
@@ -269,7 +286,7 @@ footer {
 }
 
 .footer-column ul li {
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 /* Mobile Responsiveness */

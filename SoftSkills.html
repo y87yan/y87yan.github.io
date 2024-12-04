@@ -1,21 +1,38 @@
+<!DOCTYPE html>
 <html lang="en">
+<!-- Root HTML Element -->
+<!-- Specifies the language of the document as English for accessibility and SEO -->
 <head>
+    <!-- Metadata Section -->
+    <!-- Defines character encoding as UTF-8 for comprehensive text representation -->
     <meta charset="UTF-8">
+    <!-- Makes the page responsive by setting the viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Specifies the title of the webpage -->
     <title>Soft Skills & Hobbies - Leslie Yan</title>
-    <link rel="stylesheet" href="assets/css/softskills.css"> 
+    <!-- Links the external CSS file for styling -->
+    <link rel="stylesheet" href="assets/css/softskills.css">
+    <!-- Preconnects to Google Fonts for faster loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Links the font-family "Oswald" for consistent typography -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    
+    <!-- Header Section -->
+    <!-- Introduces the website with the name, title, and navigation menu -->
     <header>
+      <!-- Website Title -->
       <h1 class="font-oswald font-size-8">Leslie Yan</h1>
+      <!-- Subtitle specifying job title -->
       <p class="font-oswald">Data Analyst</p>
+      <!-- Button to download CV -->
       <a href="path-to-your-cv.pdf" class="button" download>
         <span class="hover-text" data-text="Download CV">Download CV</span>
       </a>
+      <!-- Navigation Section -->
+      <!-- Provides links to navigate through key pages -->
       <nav>
           <ul>
             <li><a href="index.html">About</a></li>
@@ -39,21 +56,72 @@
       </nav>
   </header>
 
+   <!-- Main Content -->
+   <main>
+    <!-- Soft Skills Section -->
+    <!-- Lists key soft skills with their descriptions -->
+    <section id="soft-skills">
+       <div class="skill-list">
+        <!-- Skill: Leadership -->
+        <div class="skill-item">
+            <span class="skill-name">Leadership</span>
+            <span class="skill-details">Ability to guide teams toward achieving shared goals while inspiring innovation and collaboration.</span>
+        </div>
+        <!-- Skill: Teamwork -->
+        <div class="skill-item">
+            <span class="skill-name">Teamwork</span>
+            <span class="skill-details">Strong ability to work in diverse teams, ensuring effective collaboration and productivity.</span>
+        </div>
+        <!-- Skill: Communication -->
+        <div class="skill-item">
+            <span class="skill-name">Communication</span>
+            <span class="skill-details">Clear and concise communication skills for technical and non-technical audiences.</span>
+        </div>
+        <!-- Skill: Troubleshooting -->
+        <div class="skill-item">
+            <span class="skill-name">Troubleshooting</span>
+            <span class="skill-details">Exceptional analytical skills to diagnose and resolve problems efficiently.</span>
+        </div>
+       </div>
+    </section>
 
-   
+    <!-- Hobbies Section -->
+    <!-- Displays hobbies with images and descriptions -->
+    <section id="hobbies">
+        <h2>My Hobbies</h2>
+        <div class="hobby-grid">
+            <div class="hobby-item">
+                <img src="assets/IMG/biking.jpeg" alt="biking" class="hobby-img">
+                <h3>Cycling</h3>
+            </div>
+            <div class="hobby-item">
+                <img src="assets/IMG/crochet.jpeg" alt="Crochet" class="hobby-img">
+                <h3>Crochet</h3>
+            </div>
+            <div class="hobby-item">
+                <img src="assets/IMG/cooking.JPG" alt="Cooking" class="hobby-img">
+                <h3>Cooking</h3>
+            </div>
+            <div class="hobby-item">
+                <img src="path-to-image-4.jpg" alt="Gaming" class="hobby-img">
+                <h3>Gaming</h3>
+            </div>
+        </div>
+    </section>
+   </main>
 
-  
-  
-  <footer id="contact">
+   <!-- Footer Section -->
+   <!-- Provides navigation and contact information -->
+   <footer id="contact">
     <div class="footer-container">
+        <!-- About Links -->
         <div class="footer-column">
             <h3>About</h3>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
+        <!-- Education Links -->
         <div class="footer-column">
             <h3>Education</h3>
             <ul>
@@ -62,6 +130,7 @@
                 <li><a href="graduate.html">Graduate</a></li>
             </ul>
         </div>
+        <!-- Experience Links -->
         <div class="footer-column">
             <h3>Experience</h3>
             <ul>
@@ -69,6 +138,7 @@
                 <li><a href="Projects.html">Professional Projects</a></li>
             </ul>
         </div>
+        <!-- Skills Links -->
         <div class="footer-column">
             <h3>Skills</h3>
             <ul>
@@ -76,6 +146,7 @@
                 <li><a href="SoftSkills.html">Soft Skills & Hobbies</a></li>
             </ul>
         </div>
+        <!-- Contact Information -->
         <div class="footer-column">
             <h3>Contact</h3>
             <ul>
@@ -84,21 +155,7 @@
             </ul>
         </div>
     </div>
-</footer>
+   </footer>
 
-
-  <script>
-  
-      document.querySelectorAll('.card').forEach(card => {
-     
-        card.addEventListener('click', function() {
-          const link = card.querySelector('a');
-          if (link) {
-            window.location.href = link.href; 
-          }
-        });
-      });
-  </script>
-    
 </body>
 </html>

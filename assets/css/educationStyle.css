@@ -66,6 +66,12 @@ header nav ul li a:hover {
     background-color: #003161; /* Navy Blue */
 }
 
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 /* Dropdown Menu */
 .dropdown {
     position: relative;
@@ -213,7 +219,7 @@ footer {
 .footer-column ul li a {
     color: #37FF8B;
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 1rem;
     transition: color 0.3s ease;
 }
 
@@ -222,7 +228,7 @@ footer {
 }
 
 .footer-column ul li {
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 /* Mobile Responsiveness */

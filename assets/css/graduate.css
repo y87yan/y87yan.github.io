@@ -1,8 +1,8 @@
 /* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* Removes default margin from all elements */
+    padding: 0; /* Removes default padding from all elements */
+    box-sizing: border-box;/* Includes padding and border in the element's total width and height */
 }
 
 /* Body Style */
@@ -11,7 +11,7 @@ body {
     color: #333;
     background-color: #FFF4B7; /* Light Yellow Background */
     line-height: 1.6;
-    display: flex;
+    display: flex;/* Enables flexbox for layout management */
     flex-direction: column;
     min-height: 100vh;
 }
@@ -32,17 +32,17 @@ header {
 
 header h1 {
     font-size: 2.5em;
-    margin-bottom: 5px;
+    margin-bottom: 5px;  /* Adds spacing below the header */
 }
 
 header p {
     font-size: 1.2em;
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Adds spacing below the paragraph */
 }
 
 /* Navigation Bar */
 header {
-    position: relative;
+    position: relative; /* Sets position for stacking context */
     z-index: 10; /* Ensures header and navigation are above other content */
 }
 
@@ -70,7 +70,15 @@ header nav ul li a {
 
 header nav ul li a:hover {
     background-color: #003161; /* Navy Blue */
+    color: #37FF8B;
 }
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 
 /* Dropdown Menu */
 .dropdown {
@@ -88,7 +96,6 @@ header nav ul li a:hover {
     min-width: 150px;
     border-radius: 5px;
     overflow: hidden;
-    padding-top: 10px;
 }
 
 /* Show dropdown on hover */
@@ -308,7 +315,7 @@ header nav ul li:hover .dropdown-content {
     background-color: #FFF4B7; /* Light Yellow Background */
     border-left: 5px solid #000B58; /* Dark Blue Border */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    border-radius: 5px;
+    border-radius: 5px; /* Corners become rounded with a smooth curve.*/
 }
 
 #related-courses h3 {
@@ -462,7 +469,7 @@ footer {
 .footer-column ul li a {
     color: #37FF8B;
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 1rem;
     transition: color 0.3s ease;
 }
 
@@ -471,7 +478,7 @@ footer {
 }
 
 .footer-column ul li {
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 /* Mobile Responsiveness */
